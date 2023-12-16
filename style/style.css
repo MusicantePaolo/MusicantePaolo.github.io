@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar a.navbar-brand,
+.navbar-nav .nav-link {
+    color: #6610f2;
+    font-size: large;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    margin-right: 15px;
+}
+
+.navTitle {
+    float: right;
+    padding-top: 9%;
+    color: #6610f2;
+    font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+
+.title {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: black;
+    font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 70px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.main {
+    padding-bottom: 100px;
+    padding-top: 40px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(86, 15, 199, 0.5),rgba(86, 15, 199, 0.5)), url('background.jpg');
+}
+
+
+div .col {
+    background-color: black;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -2px 2px 0 black, 1px 1px 0 black;
+}
+
+div .row{
+    border-bottom: 12px solid black;
+    border-top: 12px solid black;
+}
+
+
+footer {
+    background-color: black;
+    color: #6610f2;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    border-top: 2px solid #6610f2;
+}
+
+footer div {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+  .button1,
+.button1 a {
+  background-color: black;
+  color: #6610f2;
+  border: none;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 8px 6px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.button1:hover,
+.button1:hover a {
+  background-color: #6610f2;
+  color: black;
+  border: none;
+  padding: 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.dimension {
+    width: 100%;
+    height: 100%;
+}
+
+.sottotitolo {
+    font-size: 20px;
+    color: white;
+    margin: 0 100px 100px 100px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -2px 2px 0 black, 1px 1px 0 black;
+}
+
+
+.title1 {
+    color:black;
+    background-color: #6610f2;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 3%;
+}
+
+.fill1{
+    padding-top: 28%;
+}
+
+.dimension1 {
+   width: 226px;
+   height: 226px;
+   padding-top: 2%;
+   padding-bottom: 2%;
+}
+
+.dimension2 {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 3%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    text-align: center;
+}
+
+.dimension3 {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 3%;
+}
+
+.dw {
+    color: #6610f2;
+    font-family: bold;
+}
