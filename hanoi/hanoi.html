@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>La Torre di Hanoi</title>
+		<link rel="icon" type="image/png" href="favicon.png"> <!-- Inserimento della favicon vicino al titolo -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">	<!-- Integrazione CSS Bootstrap -->
+		<link rel="stylesheet" href="style.css" > <!-- Inserire al posto di mystyle.css il nome del file del proprio CSS -->
+		<script src="hanoiManager.js"></script>
+	</head>
+	<body>
+			<header class="text-center">
+				<nav class="navbar navbar-expand-lg">
+					<div class="container-fluid">
+					   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					   <span class="navbar-toggler-icon"></span>
+					   </button>
+					   <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+						  <ul class="navbar-nav">
+							 <li class="nav-item fade-in">
+								<a class="nav-link" aria-current="page" href="#">Home</a>
+							 </li>
+							 <li class="nav-item fade-in">
+								<a class="nav-link" href="#">Features</a>
+							 </li>
+							 <li class="nav-item fade-in">
+								<a class="nav-link" href="#">Pricing</a>
+							 </li>
+							 <li class="nav-item dropdown fade-in">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Dropdown link
+								</a>
+								<ul class="dropdown-menu fade-in">
+								   <li><a class="dropdown-item" href="#">Action</a></li>
+								   <li><a class="dropdown-item" href="#">Another action</a></li>
+								   <li><a class="dropdown-item" href="#">Something else here</a></li>
+								</ul>
+							 </li>
+						  </ul>
+					   </div>
+					</div>
+				 </nav>
+			</header>		
+		<main>
+			<!-- Corpo -->
+			<div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://icc.fcen.uba.ar/wp-content/uploads/2020/07/logica-cognicion.jpg');">
+				<main role="main" class="inner cover">
+				   <h1 class="cover-heading fade-in">La Torre Di Hanoi</h1>
+				   <p class="lead fade-in"><strong>La Torre di Hanoi è un famoso rompicapo matematico e gioco di logica.</strong></p>
+				   <p class="lead fade-in">
+					  <a href="#" class="btn btn-primary btn-danger">Scopri di più</a>
+				   </p>
+			 </div>
+			 <div class="grid" style="padding-top: 30px;">
+				<div class="col-5"  style="border-right: 2px solid black";>
+					<h1>Come</h1>
+					<h1>funziona?</h1>
+				</div>
+				<div class="col-5" style="margin-left: 60px;">
+					<p>La Torre di Hanoi è un intrigante rompicapo che sfida la tua logica e il tuo ingegno. Scopo del gioco è spostare tutti i dischi dalla torre di partenza a quella di destinazione, rispettando le regole: puoi spostare solo un disco alla volta e non puoi mettere un disco più grande sopra uno più piccolo. Pronto a mettere alla prova le tue abilità?</p>
+				</div>
+			</div>
+			
+			 <div class="spacer"></div>
+			<div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/09/inteligencia-artificial-2458915.jpg?tf=3840x');">
+				<main role="main" class="inner cover">
+				   <h1 class="cover-heading1 fade-in">Quali sono alcuni dei principali utilizzi pratici della Torre di Hanoi?</h1>
+				   <p class="fade-in"><strong>Oltre ad essere un intrigante rompicapo, la Torre di Hanoi ha diverse applicazioni pratiche. È utilizzata nella teoria dei grafi per dimostrare concetti come l'ottimo di Floyd-Warshall, nella teoria dei codici per correggere gli errori nei dati trasmessi, e nella psicologia per studiare la risoluzione di problemi complessi. Inoltre, è spesso usata come esempio nelle lezioni di programmazione per illustrare concetti di ricorsione e algoritmi. La sua semplice struttura e le regole ben definite la rendono un utile strumento didattico in molti campi.</strong></p>
+			 </div>
+			 <div class="container" style="padding-top: 30px;">
+				<div class="text-center">
+					<h1 id="win">Provaci!</h1>
+				</div>
+				<div class="row">
+					<div class="col-12 lead">
+						<center><strong><p>Numero di mosse: <span id="score">0</span></p></strong></center>
+					</div>
+				</div>
+				<div class="row">
+					<div id="pole1" class="col-4">
+						<div></div>						
+					</div>
+					<div id="pole2" class="col-4">
+						<div></div>
+					</div>
+					<div id="pole3" class="col-4">
+						<div></div>
+						
+					</div>
+				</div>
+				<div class="row" style="margin-top:20px;">
+					<div class="col-4">
+						<center><button id="btn1" class="btn btn-primary" onclick="actionPole(1)">Prendi</button></center>
+					</div>
+					<div class="col-4">
+						<center><button id="btn2" class="btn btn-primary" onclick="actionPole(2)">Prendi</button></center>
+					</div>
+					<div class="col-4">
+						<center><button id="btn3" class="btn btn-primary" onclick="actionPole(3)">Prendi</button></center>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-5"></div>
+					<center><div id="myHand" class="col-2 divHand"></div></center>
+					<div class="col-5"></div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="row grid">
+				<div class="col-5">
+				   <h3>Cognome</h3>
+				   <p>Musicante</p>
+				   <h3>Nome</h3>
+				   <p>Paolo Pio</p>
+				</div>
+				<div class="col-5">
+				   <h3>Contatti</h3>
+				   <p>Email: paolomusicopio@gmail.com</p>
+				   <p>Telefono: +39 345 775 8811</p>
+				</div>
+				<center><p><strong>&copy; Paolo Pio Musicante</strong></p></center>
+		  </div>
+			<!-- Pedice -->
+		</footer>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!-- Integrazione Javascript Bootstrap -->
+	<script>
+		//Vengono inizializzati gli array(i blocchi di ogni pila).
+var pole1 = [1,2,3,4];
+var pole2 = [];
+var pole3 = [];
+var mano = 0; //Inizialmente il blocco all'interno della mano non esiste, è nullo.
+
+var score = 0; //Inizializzazione del numero di mosse
+
+drawScene(score); //Metodo che ridisegna l'interfaccia di gioco, comprese torri, blocchi, mosse e verifica il controllo sui bottoni.
+
+function drawScene(score){
+    drawPoles(); //Disegna le torri
+    drawHand(); //Disegna la mano
+    checkButtons(); //Controlla i bottoni
+	drawScore(score); //Disegna il "punteggio"
+	checkWin(pole3); //Controllo sulla vittoria
+}
+
+function checkWin(pole){
+	var div = document.getElementById("win");
+	
+	if(pole.length == 4){ //Se l'ultimo pole viene riempito, i tasti vengono disabilitati
+		div.innerText = '';
+		div.innerText = "Hai Vinto!";	
+		for(i = 1; i < 4; i++){
+			let button = document.getElementById("btn" + i);
+			button.disabled = true;
+		}
+		tryAgain(div); //Disegna il tasto riprova
+	}
+}
+
+function tryAgain(div) {
+	var divHand = document.getElementById("myHand");
+	var btnTryAgain = document.createElement("button"); //Creo un nuovo elemento bottone.
+
+	divHand.classList.remove("divHand"); //Elimino la classe, quindi i bordi neri.
+	btnTryAgain.textContent = "Riprova!"; //Inserisco il testo del bottone.
+	btnTryAgain.className = "btn btn-danger"; //Gli assegno le seguenti classi.
+	divHand.appendChild(btnTryAgain); //Aggiungo un nuovo nodo a divHand. Avrei potuto usare replaceChild.
+
+	btnTryAgain.onclick = function(){ //Funzione che viene richiamata ogni volta che schiaccio il bottone "Riprova!"
+
+		div.innerText = '';
+		div.innerText = "Riprova!";
+		restartScene(divHand); //Metodo che ripristina allo stato originale la scena.
+	}
+}
+
+function restartScene() {
+	pole1 = [1,2,3,4];
+	pole2 = [];
+    pole3 = [];
+	score = 0;
+
+	drawScene(score); //Riscrive la scena originale.
+}
+
+function drawScore(score) {
+	var scoreDiv = document.getElementById("score"); //Prendo l'elemento score e lo trasporto in scoreDiv.
+
+	scoreDiv.innerText = ''; //Evita la soprascrittura
+    scoreDiv.innerText += score; //Aggiorna di uno la var. ogni volta. 
+}
+
+function drawPoles(){ //Disegna i blocchi per ogni torre(i)
+    for(let i=1;i<4;i++){
+        drawPole(getPole(i), getDivPole(i)); //I due metodi prendono corrispettivamente le torri(array) e i div
+    }
+}
+
+function getDivPole(n){ //Ritorna il div che ha come ID pole + (i di prima, che diviene n)
+    return document.getElementById("pole"+n);
+}
+
+function drawPole(pole, div){ //Disegna i pole[i] all'interno dei div
+    div.innerHTML = ""; //Evita la sovrascrittura con la scena antecedente
+    for(let i=0; i<pole.length; i++){
+        div.innerHTML+=drawDisk(pole[i]); //Viene disegnato ogni disco
+    }
+}
+
+function checkButtons(){
+    for(let i=1;i<4;i++)
+        checkButton(i); //La verifica dei bottoni viene eseguita su tutte le pile ogni volta che viene riscritta la scena
+}	
+
+function getPole(n){ //in base alla i(n) restituisce l'array di pole desiderato
+    switch(n){
+        case 1: return pole1;
+        case 2: return pole2;
+        case 3: return pole3;
+    }
+}
+
+function checkButton(n){
+    let button = document.getElementById("btn" + n); //Prende il bottone del div corrispondente
+    let pole = getPole(n); //Prende il pole(array) del div
+    if(mano==0){ //Se non abbiamo niente in mano, i pole al cui interno non hanno nulla non possono prendere blocchi, poichè non abbiamo niente in mano.
+        button.innerText = "Prendi";
+        button.disabled = pole.length == 0; ///Il bottone viene disabilitato se la torre non ha blocchi.
+    } else { //Altrimenti se il pole è vuoto (true, lo metto), oppure se il pole ha elementi e il blocco che ho in mano è più piccolo del primo elemento (true)
+        button.innerText = "Metti";
+        button.disabled = pole.length > 0 ? pole[0] < mano : false;
+        /*
+        if(pole.length > 0){
+            if(pole[0] < mano){
+                button viene disabilitato
+            }else{
+                button non viene disabilitato
+            }
+        }else{
+            button non viene disabilitato
+        }*/	
+    }
+}
+
+function drawHand(){
+    let handDiv = document.getElementById("myHand");
+	handDiv.classList.add("divHand"); //Poichè ogni volta che restartavo il gioco lo stile del divHand non veniva riassegnato, allora ho deciso di assegnarglielo ogni volta che la scena veniva riscritta!
+    handDiv.innerHTML = drawDisk(mano); //Disegna la mano, con actionPole() la mano avrà il suo valore.
+}
+
+function actionPole(n){
+	score++; //Incremento "punteggio".
+    if(mano==0){//Se la nostra mano è vuota, questa prende il primo elemento del pole(.shift()).
+        mano = getPole(n).shift();
+    } else {
+        getPole(n).unshift(mano); //Altrimenti(quindi se abbiamo qualcosa in mano) mette il blocco nella mano nel pole in questione(getPole(n)), togliendolo dalla mano(.unshift(mano))
+        mano = 0;
+    }
+    drawScene(score); //Viene aggiornata la scena
+}
+
+function getColor(dimension){ //Viene assegnato il colore in base alla posizione(e quindi anche alla grandezza) del nostro blocco(pole[i])
+    let color = "#FF0000";
+    switch(dimension){
+        case 1: color = "#000000"; break;
+        case 2: color = "#0000FF"; break;		
+        case 3: color = "#00FF00"; break;
+    }
+    return color;
+}
+
+function drawDisk(dimension){ //Prende per parametro la i
+    let color = getColor(dimension);//Che viene passati qui per prendere il colore in base alla posizione
+    return '<center><div class="disk" style="background-color:'+color+'; width:'+dimension*10+'%;"></div></center>'; //Ritorna il div
+}
+	</script>
+</html>

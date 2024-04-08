@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+}
+.disk {
+    height: 30px;
+    border-radius: 12px;
+    transform-style: preserve-3d; /*definisce le posizioni(x, y, z) in uno spazio tridimensionale (volevo creare un po' di profondità)*/
+    transform: perspective(1000px) rotateX(30deg); /*Chiaro tentativo di formare della prospettiva, fallimentare*/
+    transition: transform 0.2s ease-in-out; /*Tempo della transizione e l'animazione inizia lentamente, accelera nel mezzo e poi rallenta alla fine*/
+}
+
+.disk:hover {
+    transform: perspective(1000px) rotateX(30deg) rotateY(180deg); /*Il disco viene ruotato di 180 gradi*/
+}
+
+.divHand{
+    margin: 30px 0 30px 0;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 20px;
+}
+.navbar {
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+}
+.nav-item {
+    padding: 15px;
+}
+.nav-link{
+    color: black;
+    font-size: 2rem;
+}
+.navbar-nav .nav-item:hover .nav-link {
+    border-bottom: 2px solid black;
+}
+.navbar-nav .nav-item .nav-link {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.4s ease;
+}
+.footer{
+    background-color: rgb(17, 17, 70);
+    padding-top: 40px;
+}
+.bord{
+    padding-left: 35%;
+    border-left: solid black;
+}
+.cover{ /*Gli elementi vengono allineati verticalmente (flessibilità), l'immagine copre in modo omogeneo l'elemento*/
+    text-align: center; padding:10px; margin:0px; min-height:500px; width:100%; 
+    display: flex; flex-direction:column; justify-content:center; 
+    background-position: center center; background-size:cover;
+    padding-top: 25px;:
+}
+.cover * {color:#fff}
+.cover-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black; 
+}
+.cover-heading1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black; 
+}
+p{
+    padding-top: 15px;
+    color: #000000;
+}
+h1{
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+h2{
+    color: rgb(22, 22, 22);
+    font-size: 25px;
+}
+
+h3{
+    color: black;
+    font-size: 24px;
+}
+.grid { 
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-left: 50px; 
+    max-width: 1250px; 
+    display: flex; /*Contenitore flessibile*/
+    flex-flow: row; /*Ogni elemento viene allineato in una riga*/
+    flex-wrap: wrap; /*Gli elementi figlio possono essere avvolti su righe multiple se non ci sono abbastanza spazi disponibili.*/
+}
+.lead {
+    font-size: 1.5rem;
+    color: #000000;
+}
+.spacer {
+    background-color: #FFFFFF   ;
+    padding: 15px;
+}
+.btn{
+    display:inline-block;
+    padding:0.7em 1.4em;
+    margin:0 0.3em 0.3em 0;
+    border:none;
+    border-radius:0.5em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'arial';
+    text-transform:uppercase;
+    font-weight:400;
+    color:#FFFFFF;
+    box-shadow:inset 0 -0.6em 0 -0.3em rgba(0,0,0,0.20);
+    text-align:center;
+    position:relative;
+    cursor:pointer;
+    margin-bottom: 15px;
+  }
+.btn:active{
+    top:0.15em;
+    color:#D9D9D9;
+    box-shadow:none;
+  }
+
+
+
+/*Animazione (:*/
+/*crea un effetto di dissolvenza in entrata, rendendolo gradualmente visibile cambiando la sua opacità dal 0% al 100% durante un periodo di 2 secondi.*/
+.fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+}
+
+/*I prefissi -webkit-, -moz-, -o-, -ms- sono utilizzati per garantire la compatibilità con i diversi browser*/
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-ms-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}

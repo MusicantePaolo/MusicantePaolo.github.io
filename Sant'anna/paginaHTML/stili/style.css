@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/background.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagine {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 4px solid black;
+}
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+.part-up{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 300px;
+    height: 125px;
+    cursor: pointer;
+}
+
+.part-up ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 50px;
+    font-size: x-large;
+}
+
+.part-up ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.part-up a{
+    padding: 8px 0;
+    margin: 20px 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.content {
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    color: white;
+}
+
+.content h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.content p {
+    margin: 10px;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 20px;
+    background: rgb(30, 120, 120);
+    border-radius: 25px;
+    margin-left: 4%;
+    margin-right:
+    4%; padding: 10px;
+}
+
+li {
+    margin: 10px;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 20px;
+    background: rgb(30, 120, 120);
+    border-radius: 25px;
+    margin-left: 4%;
+    margin-right:
+    4%; padding: 10px;
+}
+
+ol {
+    margin: 10px;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 20px;
+    background: rgb(30, 120, 120);
+    border-radius: 25px;
+    margin-left: 4%;
+    margin-right:
+    4%; padding: 10px;
+}
