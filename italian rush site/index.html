@@ -8,13 +8,73 @@
 </head>
 <body>
     <header>
-        
+        <header class="header">
+          <div class="header__content">
+            <a class="header__logo" href="#">
+            </a>
+            <ul class="header__menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Dettagli</a></li>
+              <li><a href="#">Livelli</a></li>
+              <li><a href="#">Download</a></li>
+              <li><a href="#">FAQ e AIUTO</a></li>
+            </ul>
+            <div class="header__quick">
+              <div class="icon-hamburger">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </header>
     </header>
     <main>
-
+        <div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('bg.jpg');">
+          <div class="cover__content">
+            <h1>Italian Rush</h1>
+            <h2> Un gioco 2D endless runner che metterà alla prova le vostre capacità da gamer! </h2>
+          <a href="#" class="button">SCARICA!</a>
+          </div>
+        </div>
+        <div class="grid">
+                <div class="col-45">
+                    <h2>Trama del gioco</h2>
+                    <p>
+                        Eddy è un giovane affetto da un disturbo compulsivo che lo spinge a correre senza sosta attraverso le città italiane. Questo suo incessante movimento diventa una sorta di fuga dalla realtà che lo circonda, un modo per sfuggire ai pensieri ossessivi che lo tormentano costantemente.
+                        <br>
+                        La sua storia inizia nella maestosa Roma, una città che brilla di storia e cultura. Qui, tra i ruderi antichi e i monumenti iconici, Eddy inizia la sua folle corsa alla ricerca di qualcosa che non sa definire. Attraverso le strade trafficate e i vicoli tranquilli, si imbatte in scene di vita quotidiana che lo spingono sempre più in profondità dentro se stesso.
+                        <br>
+                        Dalla capitale, Eddy parte verso il sud, alla scoperta della frenetica Napoli. Tra le stradine tortuose del centro storico e i quartieri vivaci, Eddy si trova immerso in un turbinio di colori, odori e suoni. È qui che inizia a confrontarsi con i suoi demoni interiori, trovando conforto nell'energia vibrante della città e nella calda ospitalità dei suoi abitanti.
+                        <br>
+                        La sua fuga continua verso nord, fino alla romantica Venezia. Tra i canali serpeggianti e le piazze incantevoli, Eddy si immerge in un mondo di bellezza senza tempo. Ma è anche qui che si rende conto che non può più correre via dai suoi problemi. È solo confrontandosi con il passato e affrontando le sue paure che potrà trovare la pace interiore che tanto desidera.
+                        <br>
+                        Attraverso le sue avventure in queste tre città iconiche, Eddy intraprende un viaggio di auto-scoperta e di crescita personale che lo porterà ad accettare se stesso e a trovare la forza per affrontare i suoi demoni interiori.</p>
+                </div>
+                <div class="col-50" style="margin-top: 5%; margin-left: 0.2%;">
+                    <center><img width="50%" src="personaggio.png" alt=""></center>
+                    <h2>Eddy (:</h2>
+                </div>
+                <div class="col-100">
+                    <h2>Meccaniche di Gioco</h2>
+                    <ul>
+                        <li><strong>Endless Runner:</strong> Il gioco si sviluppa in un'ambientazione continua senza fine, dove il giocatore controlla il protagonista Eddy mentre corre attraverso le città italiane.</li>
+                        <li><strong>Correre e Saltare:</strong> Il giocatore può controllare Eddy facendolo correre avanti e indietro lungo le strade delle città. Può saltare per evitare ostacoli o per raccogliere monete e altri bonus.</li>
+                        <li><strong>Sblocco di Livelli:</strong> Il progresso nel gioco è determinato dal raggiungimento di una determinata quantità di monete desiderate. Raccogliendo un certo numero di monete durante la corsa, il giocatore sblocca nuovi livelli e nuove ambientazioni.</li>
+                        <li><strong>Monete e Power-Up:</strong> Lungo il percorso, ci saranno monete da raccogliere che consentiranno al giocatore di sbloccare nuovi livelli e acquistare power-up o miglioramenti per Eddy.</li>
+                        <li><strong>Ostacoli che rallentano la velocità:</strong> Lungo il percorso, ci saranno vari ostacoli come barriere, bidoni della spazzatura, persone in strada e così via. Se Eddy entra in contatto con un ostacolo, la sua velocità diminuirà temporaneamente.</li>
+                        <li><strong>Varietà di ambientazioni:</strong> Ogni livello potrebbe essere ambientato in una città diversa, offrendo una varietà di sfondi e temi visivi, oltre a nuovi ostacoli e sfide da affrontare.</li>
+                    </ul>                    
+                </div>
+        </div>
     </main>
     <footer>
 
     </footer>
+    <script>
+        let item = document.querySelector('.icon-hamburger');
+        item.addEventListener("click", function() {
+              document.body.classList.toggle('menu-open');
+        });
+      </script>
 </body>
 </html>
