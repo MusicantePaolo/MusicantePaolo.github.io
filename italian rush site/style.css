@@ -214,6 +214,6 @@ h4, p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5; color: #fff; text-al
 /* Adattabilità per dispositivi mobili */
 @media (max-width: 600px) {
     .contact__container {
-        width: 90%; /* Larghezza per dispositivi mobili */
+        width: 90%; /* Larghezza per dispositivi mobili*/
     }
 }
