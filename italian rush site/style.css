@@ -58,7 +58,7 @@ h4, p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5; color: #fff; text-al
 }
 /* ! Cover */
 .cover{ 
-  text-align: center; margin:0px; min-height:600px; width:100%; 
+  text-align: center; margin:0px; min-height:800px; width:100%; 
   display:flex; flex-direction:column; justify-content:center; 
   background-position: center center; background-size:cover;
   border-bottom: 2px solid black; border-top: 2px solid black;
@@ -67,6 +67,9 @@ h4, p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5; color: #fff; text-al
 .cover h1{
     font-size: 6rem;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+}
+.height{
+    min-height: 400px;
 }
 /* Menu */
 :root { --menu-color: #fff; }
@@ -106,17 +109,9 @@ h4, p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5; color: #fff; text-al
     position: relative;
     width: 100%;
     padding: 40px 0;
-}
-.footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url('bg.jpg') no-repeat center center / cover;
-    filter: blur(3px);
-    z-index: -1;
+    background-image: url('bg-photoaidcom-blur.jpg');
+    background-size: cover;
+    background-position: center bottom;
 }
 .footer .social{
     text-align: center;
@@ -145,7 +140,7 @@ h4, p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5; color: #fff; text-al
     text-align: center;
 }
 .footer ul li a{
-    color: #ffffff;
+    color: #000;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease-in-out;
 }
@@ -174,7 +169,7 @@ h4, p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5; color: #fff; text-al
     padding: 20px;
     border-radius: 8px; /* Bordi arrotondati */
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Ombra leggera */
-    font-family: 'Roboto', sans-serif; /* Imposta il font Roboto */
+    background-color: rgb(89, 47, 0);
 }
 
 /* Stile per il form e gli input */
@@ -190,7 +185,6 @@ h4, p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5; color: #fff; text-al
     border-radius: 4px; /* Bordi arrotondati */
     font-size: 16px; /* Dimensione del testo */
     background-color: #fff; /* Colore di sfondo per gli input */
-    font-family: 'Roboto', sans-serif; /* Assicurati che il font sia consistente */
 }
 
 .contact__input:focus {
