@@ -167,7 +167,7 @@ h4, p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5; color: #fff; text-al
 .button:hover{ background: #060606; }
 
 /* ===== CONTACT =====*/
-/* Stile generale per il container */
+/* Stile generale per il container */ 
 .contact__container {
     max-width: 800px; /* Larghezza massima del contenitore */
     margin: 0 auto; /* Centratura del contenitore */
