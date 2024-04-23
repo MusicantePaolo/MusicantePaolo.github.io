@@ -5,6 +5,7 @@
     margin: 0;
     font-family: 'MK Zodnig Square', sans-serif;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 main{
     background-color: rgb(110, 61, 5)
@@ -74,15 +75,18 @@ h4, p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5; color: #fff; text-al
 .header__content{max-width: 1200px;width: 100%;margin: 0 auto; display: flex;justify-content: space-between;}
 
 .header__logo,
-.header__quick{display: flex; align-items: center;color:var(--menu-color)}
+.header__quick{display: flex; align-items: center;color:rgb(110, 61, 5)}
+
+.header__logo{font-size: 32px;}
+
 
 .header__menu{padding: 0;margin: 0;}
 .header__menu li{display: inline-block;}
-.header__menu li a{color:var(--menu-color); opacity: 0.8;display: block;padding: 16px;font-size: 15px;}
+.header__menu li a{color:#fff; opacity: 0.8;display: block;padding: 16px;font-size: 15px;}
 
 @media (max-width: 768px) {
   .header__menu{   
-    position: absolute; top:60px; left:0; background-color: var(--menu-bg); width: 100%; height: 100vh;
+    position: absolute; top:60px; left:0; background-color: rgb(110, 61, 5); width: 100%; height: 100vh;
     height: 0vh; overflow: hidden;transition: all 1s cubic-bezier(.215, .61, .355, 1);
   }
 
@@ -98,12 +102,21 @@ h4, p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5; color: #fff; text-al
   .header__quick{display: flex; justify-content: flex-end; width: 50%;}
 
 }
-.footer{
-    background-color: #000;
+.footer {
     position: relative;
-    bottom: 0;
     width: 100%;
     padding: 40px 0;
+}
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url('bg.jpg') no-repeat center center / cover;
+    filter: blur(3px);
+    z-index: -1;
 }
 .footer .social{
     text-align: center;
@@ -146,3 +159,9 @@ h4, p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5; color: #fff; text-al
     font-size: 16px;
     color: #ffffff;
 }
+.button { 
+  font-size: 1rem; text-transform: uppercase; background: #000; color:#fff;
+  text-decoration: none;padding: 10px 20px; display: inline-block;
+  border-radius: 4px; font-weight: 700;
+}
+.button:hover{ background: #060606; }
