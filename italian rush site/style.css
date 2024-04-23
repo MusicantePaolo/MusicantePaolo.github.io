@@ -165,3 +165,55 @@ h4, p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5; color: #fff; text-al
   border-radius: 4px; font-weight: 700;
 }
 .button:hover{ background: #060606; }
+
+/* ===== CONTACT =====*/
+/* Stile generale per il container */
+.contact__container {
+    max-width: 800px; /* Larghezza massima del contenitore */
+    margin: 0 auto; /* Centratura del contenitore */
+    padding: 20px;
+    border-radius: 8px; /* Bordi arrotondati */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Ombra leggera */
+    font-family: 'Roboto', sans-serif; /* Imposta il font Roboto */
+}
+
+/* Stile per il form e gli input */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact__input, .contact__button {
+    padding: 10px; /* Spazio interno */
+    border: none; /* Nessun bordo */
+    border-radius: 4px; /* Bordi arrotondati */
+    font-size: 16px; /* Dimensione del testo */
+    background-color: #fff; /* Colore di sfondo per gli input */
+    font-family: 'Roboto', sans-serif; /* Assicurati che il font sia consistente */
+}
+
+.contact__input:focus {
+    background-color: #eef; /* Cambia il colore di sfondo al focus */
+    outline: none; /* Rimuove l'outline di default */
+}
+
+/* Stile per il bottone di invio */
+.contact__button {
+    background-color: #007bff; /* Colore di sfondo */
+    color: white; /* Colore del testo */
+    cursor: pointer; /* Cambia il cursore in una manina */
+    transition: background-color 0.3s; /* Transizione fluida per il background */
+    font-weight: 700; /* Testo in grassetto per il bottone */
+}
+
+.contact__button:hover {
+    background-color: #0056b3; /* Cambia colore al passaggio del mouse */
+}
+
+/* Adattabilità per dispositivi mobili */
+@media (max-width: 600px) {
+    .contact__container {
+        width: 90%; /* Larghezza per dispositivi mobili */
+    }
+}
