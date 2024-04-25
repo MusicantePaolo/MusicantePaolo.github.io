@@ -353,6 +353,9 @@ span{
     background-size: cover;
     background-position: center;
 }
+.service-box-unity:hover, .service-box-unity1:hover{
+    transform: scale(1.03);
+}
 .service-box:hover{
     background: #ffffff;
     color: var(--main-color);
