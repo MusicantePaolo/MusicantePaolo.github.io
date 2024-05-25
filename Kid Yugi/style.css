@@ -269,6 +269,7 @@ footer{
 .riferimenti h3{color: #7a0000; text-align: center;}
 .riferimenti img{width: 100%;border-bottom-left-radius: 2%; border-bottom-right-radius: 2%;}
 .riferimenti .grid{margin-bottom: 3%;}
+.riferimenti p{text-align: justify;}
 
 ::-webkit-scrollbar{width: 15px;;}
 ::-webkit-scrollbar-thumb{background-color: #7a0000; border-radius: 5%;}
