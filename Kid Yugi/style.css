@@ -11,8 +11,8 @@ body, html{ font-family:bold; font-size: 16px; box-sizing: border-box;margin: 0;
 
 .header__menu{padding: 0;margin: 0;}
 .header__menu li{display: inline-block;}
-.header__menu li a{color:#fff; opacity: 0.8;display: block;padding: 16px;font-size: 15px;}
-.header__menu li a:hover{color: #7a0000; text-decoration: underline; transition: ease-in-out 0.3s;}
+.header__menu li a{color:#fff; opacity: 0.8;display: block;padding: 16px;font-size: 15px; transition: 0.5s ease;}
+.header__menu li a:hover{color: #7a0000; text-decoration: underline; transition: ease-in-out 0.4s;}
 
 /*Utilizzate per velocizzare un po' le cose.*/
 .mt-0{margin-top: 0 }
@@ -138,6 +138,14 @@ cite{
 }
 .button strong{color: #000;}
 .button:hover{background-color: #6a0000;}
+.riferimenti .button{
+    display: inline-block; position: absolute;
+    bottom: 3%; right: 3%;
+    margin-top: 10px; margin-bottom: 20px;
+    padding: 5px 10px; background-color: #7a0000;
+    text-decoration: none; border-radius: 5px;
+    font-size: 16px; color: #fff;
+}
 .video-container {
     border-top: 6px solid #7a0000;
     position: relative;
@@ -210,7 +218,7 @@ cite{
     overflow-x: auto; /*Abilita lo scorrimento orizzontale*/
     scroll-behavior: smooth; /*Aggiungi animazione lenta allo scorrimento */
     width: 100%;
-    padding: auto;
+    padding: 5px;
 }
 .card {
     background-color: #0c0c0c; padding: 20px;
@@ -257,6 +265,10 @@ footer{
     cursor: pointer;
 }
 .info-icon:active{transform: scale(0.95);} /*riduce leggermente l'immagine */
+
+.riferimenti h3{color: #7a0000; text-align: center;}
+.riferimenti img{width: 100%;border-bottom-left-radius: 2%; border-bottom-right-radius: 2%;}
+.riferimenti .grid{margin-bottom: 3%;}
 
 ::-webkit-scrollbar{width: 15px;;}
 ::-webkit-scrollbar-thumb{background-color: #7a0000; border-radius: 5%;}
