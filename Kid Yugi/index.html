@@ -489,21 +489,11 @@
       
       function cambiaImmagine(imgId, imgSrc1, imgSrc2) {
          var img = document.getElementById(imgId);
-         
-         img.style.transition = 'left 0.5s ease-in-out';
-         img.style.left = '0px';
-         img.style.opacity = 0;
-         
-         setTimeout(function() {
             if (img.src.endsWith(imgSrc1)) {
                   img.src = imgSrc2;
             } else {
                   img.src = imgSrc1;
             }
-            
-            img.style.opacity = 1;
-         }, 250);
-         img.style.left = '-100%';
       }
    </script>
 </html>
