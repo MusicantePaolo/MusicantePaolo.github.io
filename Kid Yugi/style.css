@@ -264,6 +264,13 @@ footer{
     top: 4%; right: 4%;
     cursor: pointer;
 }
+
+.info-iconA{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+}
 .info-icon:active{transform: scale(0.95);} /*riduce leggermente l'immagine */
 
 .riferimenti h3{color: #7a0000; text-align: center;text-decoration: underline;}
@@ -283,18 +290,18 @@ footer{
 
 .arrow-left img{
     position: absolute;
-    width: 80px;
-    height: 80px;
-    bottom: 45%;
-    left: -3%;
+    width: 60px;
+    height: 60px;
+    bottom: -5%;
+    left: -2%;
     z-index: 100;
 }
 .arrow-right img{
     position: absolute;
-    width: 80px;
-    height: 80px;
-    bottom: 45%;
-    right: -3%;
+    width: 60px;
+    height: 60px;
+    bottom: -5%;
+    right: -2%;
     z-index: 100;
 }
 .arw{
