@@ -262,6 +262,14 @@ footer{
     bottom: 2%;
     right: 2%;
 }
+.linkTestoB{
+    text-decoration: underline;
+    color: #b40000;
+    font-weight: 300;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
 
 .image{position: relative;}
 
@@ -285,12 +293,6 @@ footer{
 .riferimenti .grid{margin-bottom: 3%;}
 .riferimenti p{text-align: justify;}
 
-::-webkit-scrollbar{width: 15px;;}
-::-webkit-scrollbar-thumb{background-color: #7a0000; border-radius: 5%;}
-::-webkit-scrollbar-track{ background-color: #000; width: 50px;}
-
-
-
 .container{
     position: relative;
 }
@@ -311,6 +313,49 @@ footer{
     right: -2%;
     z-index: 100;
 }
-.arw{
-    cursor: pointer;
+.arw{cursor: pointer;}
+
+.artisti-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
+
+
+/*Analisi Testo*/
+.analisi .header1{
+    color: #6a0000;
+}
+
+.analisi main{
+    background-color: #000;
+    padding-bottom: 12px;
+}
+
+.analisi h2{
+    font-size: 2rem;
+    color: #7a0000;
+}
+
+.analisi .contorno{
+    border: 3px solid #7a0000;
+    width: 100%;
+    margin: 10px;
+}
+
+.analisi em{
+    color: #b40000;
+}
+
+.analisi .testo p{
+    line-height: 1.6;
+    font-style: italic;
+    font-size: medium;
+}
+
+::-webkit-scrollbar{width: 15px;;}
+::-webkit-scrollbar-thumb{background-color: #7a0000; border-radius: 5%;}
+::-webkit-scrollbar-track{ background-color: #000; width: 50px;}

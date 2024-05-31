@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
          const rightArrow = container.querySelector('.arrow-right');
          const cardContainer = container.querySelector('.card-container');
 
-         const scrollAmount = 200; //Quantità di scorrimento in pixel per ogni clic
+         const scrollAmount = 2000; //Quantità di scorrimento in pixel per ogni clic
 
          leftArrow.addEventListener('click', () => {
                cardContainer.scrollBy({
