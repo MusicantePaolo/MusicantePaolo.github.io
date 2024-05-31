@@ -227,6 +227,13 @@ cite{
     margin-right: 15px; min-width: 400px;
     position: relative;
 }
+.riferimenti .card{
+    background-color: #0c0c0c; padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+    border-radius: 10px; overflow: hidden;
+    margin-right: 8px; min-width: 400px;
+    position: relative;
+}
 .card p{text-align: justify;}
 .card__img {
     min-height: 200px; background-position: center center;
