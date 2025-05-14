@@ -216,19 +216,10 @@ span{
 }
 @keyframes words {
     0%, 20% {
-        content: 'JavaScript Developer';
+        content: 'aspirante programmatore';
     }
     21%, 40% {
-        content: 'Java Programmer';
-    }
-    41%, 60% {
-        content: 'C++ & C Developer';
-    }
-    61%, 80% {
-        content: 'Unity Game Developer';
-    }
-    81%, 100% {
-        content: 'GitHub Manager';
+        content: 'aspirante sviluppatore videoludico';
     }
 }
 
