@@ -193,12 +193,12 @@ span{
     position: relative;
 }
 .text-animation span::before{
-    content: '';
+    content: 'Sviluppatore Videoludico';
     color: var(--main-color);
     animation: words 20s infinite;
 }
 .text-animation span::after{
-    content: 'Sviluppatore Videoludico';
+    content: '';
     background-color: var(--second-bg-color);
     position: absolute;
     width: calc(100% + 8px);
