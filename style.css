@@ -193,7 +193,7 @@ span{
     position: relative;
 }
 .text-animation span::before{
-    content: 'studente';
+    content: '';
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -214,11 +214,12 @@ span{
 }
 @keyframes words {
     0%, 20% {
-        content: 'aspirante programmatore';
+        content: 'Aspirante Programmatore';
     }
     21%, 40% {
-        content: 'aspirante sviluppatore videoludico';
+        content: 'Aspirante Sviluppatore Videoludico';
     }
+    
 }
 
 @keyframes typing{
