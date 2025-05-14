@@ -198,7 +198,7 @@ span{
     animation: words 20s infinite;
 }
 .text-animation span::after{
-    content: '';
+    content: 'Sviluppatore Videoludico';
     background-color: var(--second-bg-color);
     position: absolute;
     width: calc(100% + 8px);
@@ -214,12 +214,11 @@ span{
 }
 @keyframes words {
     0%, 20% {
-        content: 'Aspirante Programmatore';
+        content: 'Programmatore';
     }
     21%, 40% {
-        content: 'Aspirante Sviluppatore Videoludico';
+        content: 'Sviluppatore Videoludico';
     }
-    
 }
 
 @keyframes typing{
