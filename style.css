@@ -80,11 +80,9 @@ body{
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease-in-out;
-    border-bottom: 3px solid transparent;
 }
 .navbar a:hover,
 .navbar a.active{
-    color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
 #menu-icon{
@@ -195,7 +193,7 @@ span{
     position: relative;
 }
 .text-animation span::before{
-    content: 'Web Developer';
+    content: 'studente';
     color: var(--main-color);
     animation: words 20s infinite;
 }
