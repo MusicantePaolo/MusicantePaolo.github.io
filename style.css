@@ -192,12 +192,15 @@ span{
 .text-animation span{
     position: relative;
 }
-.text-animation span::before{
-    content: 'Sviluppatore Videoludico';
+.text-animation span::before {
+    content: 'Programmatore';
     color: var(--main-color);
-    animation: words 20s infinite;
+    animation: words 20s steps(1, end) infinite;
+    position: relative;
+    display: inline-block;
 }
-.text-animation span::after{
+
+.text-animation span::after {
     content: '';
     background-color: var(--second-bg-color);
     position: absolute;
@@ -205,21 +208,30 @@ span{
     height: 100%;
     border-left: 3px solid var(--second-bg-color);
     right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+    animation: cursor 0.6s infinite, typing 5s steps(20, end) infinite;
 }
-@keyframes cursor{
-    to{
+
+@keyframes cursor {
+    to {
         border-left: 2px solid var(--main-color);
     }
 }
+
 @keyframes words {
-    0%, 20% {
+    0%, 24% {
         content: 'Programmatore';
     }
-    21%, 40% {
+    25%, 49% {
         content: 'Sviluppatore Videoludico';
     }
+    50%, 74% {
+        content: 'Web Designer';
+    }
+    75%, 100% {
+        content: 'Sviluppatore Mobile';
+    }
 }
+
 
 @keyframes typing{
     10%,
